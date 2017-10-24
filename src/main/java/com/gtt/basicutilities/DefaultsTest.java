@@ -9,6 +9,9 @@ import com.google.common.base.Defaults;
 
 /**
  * @author tiantiangao
+ *
+ * 测试工具类Defaults的相关api
+ *
  */
 public class DefaultsTest {
 
