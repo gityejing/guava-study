@@ -8,6 +8,11 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
+	<properties>
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
+
+	</properties>
+
 	<dependencies>
 		<dependency>
 		    <groupId>com.google.guava</groupId>
@@ -20,4 +25,20 @@
             <version>4.4</version>
         </dependency>
 	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
